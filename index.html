@@ -1,1 +1,101 @@
+<!DOCTYPE html><html lang="en"><head>
+ 
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<style>
+ @media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+ @-ms-viewport {
+  width: device-width;
+}
+html {
+ height:100%;
+ border-bottom: 25px solid #000000;
+}
+body {
+  background-color: black;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  padding: 2rem;
+  color: white;
+  font: 1.3rem Inconsolata, monospace;
+  font-size: 1vw;
+  text-shadow: 0 0 5px #C8C8C8;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width:100%;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+  }
+}
+::selection {
+  background: #0080FF;
+  text-shadow: none;
+}
+pre {
+  margin: 0;
+}
+</style>
+<link rel="stylesheet" href="termynal.css">
+</head>
+<body>
+<div id="termynal" data-termynal="" data-ty-delay="0">
+<span data-ty="login" data-ty-delay="20" data-ty-typedelay="262">root</span>
+<span data-ty="password" data-ty-delay="3000" data-ty-cursor="▋">  </span>
+<span data-ty="" data-ty-delay="0"></span>
+<span data-ty=""><pre>Welcome to Ubuntu 24.04.2 LTS (GNU/Linux 6.8.0-187-generic x86_64)
 
+
+  System load:  0.01%                Processes:             48726
+  Usage of /:   0.34% of 298.49TB     Users logged in:       219
+  Memory usage: 9%                 IP address for eth0:   10.10.201.11
+  Swap usage:   17%
+
+
+0 packages can be updated.
+0 security updates available.</pre></span>
+<span data-ty="" data-ty-delay="0"></span>
+<span data-ty="" data-ty-delay="4050" data-ty-cursor="▋">Articulating Splines... Please Wait</span>
+<span data-ty="progress"></span>
+<span data-ty="" data-ty-delay="0"></span>
+<span data-ty="input" data-ty-delay="1250">sqlmap -u "http://10.10.201.11/?p=1&forumaction=search" --dbs</span>
+<span data-ty="" data-ty-delay="0">[*] starting</span>
+  <span data-ty>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;___</span>
+  <span data-ty>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;__H__</span>
+  <span data-ty>&nbsp;___&nbsp;___[']_____&nbsp;___&nbsp;___&nbsp;&nbsp;{1.8.4.5#dev}</span>
+  <span data-ty>|_ -| . [']&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| .&#39;| . |</span>
+  <span data-ty>|___|_&nbsp;["]_|_|_|__,|&nbsp;&nbsp;_|</span>
+  <span data-ty>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|_|V...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|_|&nbsp;&nbsp;&nbsp;https://sqlmap.org</span>
+<span data-ty>[12:34:58] [INFO] testing if GET parameter &#39;id&#39; is injectable</span>
+<span data-ty>[12:34:59] [INFO] GET parameter &#39;id&#39; appears to be &#39;AND boolean-based blind - WHERE or HAVING clause&#39; injectable</span>
+<span data-ty>[12:35:00] [INFO] the back-end DBMS is MySQL</span>
+<span data-ty="input" data-ty-delay="1250">bash: SELECT * from userinfo where username=&'& form(usr) &'& AND password=&'& form(pwd) &'& then login.asp else BadLogin.asp  (Post to viewport)</span>
+<span data-ty="input" data-ty-delay="1250">bash: -c ./ethicalHacker</span>
+<span data-ty="" data-ty-delay="1250">bash: ./ethicalHacker: No such file or directory</span>
+<span data-ty="input" data-ty-delay="1650" data-ty-cursor="▋" data-ty-typedelay="-200">bash: ';exec master..xp_cmdshell "echo YOU ARE HACKED > c:\inetpub\wwwroot\default.htm";--</span>
+<span data-ty="" data-ty-delay="0"></span>
+<span data-ty="" data-ty-prompt=">>>">ERROR (not really), NOTICE: We are currently twirling our thumbs, reminiscing on the good'ol'days, the wild wild west of the internet days, post Commodore 64, Amiga, and the Intel i386.</span>
+<span data-ty="" data-ty-delay="0">Feel free stay here and wait, your browser will auto refresh when we come back online.</span>
+<span data-ty="" data-ty-delay="0"></span>
+<span data-ty="" data-ty-delay="0">-SEC Dynamics, LLC</span>
+<span data-ty="" data-ty-delay="0">-SECURITY . ENGINEERING . CONSULTING</span>
+<span data-ty=""></span>
+<span data-ty=""></span>
+<span data-ty="input" data-ty-cursor="▋" data-ty-typedelay="250">exit</span>
+<span data-ty=""></span>
+<span data-ty="" data-ty-delay="1650" data-ty-prompt=">>>">data exfiltration complete.</span>
+<script src="termynal.js" data-termynal-container="#termynal" type="e58644d9238fe59cff74fa82-text/javascript">
+var termynal = new Termynal('#termynal', { startDelay: 600 })
+</script>
+<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="e58644d9238fe59cff74fa82-|49" defer=""></script><script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'93256e3eaa0b9fc4',t:'MTc0NDk5MjYwOS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+
+</div></body></html>
